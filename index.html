@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte NesQuit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/295cff981c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--navbar-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                NesQuit
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Manuales y tutoriales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Calendario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Soporte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--seccion uno-->
+    <div class="distribution">
+        <button id="toggleButton" class="btn-js d-md-none">Ver chat</button>
+        <section class="section--one visible">
+            <h4 class="chat__title">Chats</h4>
+            <form class="chat__form">
+                <input type="text" class="chat__input">
+                <button class="chat__button">Buscar</button>
+            </form>
+            <div class="chat__control">
+                <ul class="chat__list">
+                    <li class="chat__item">
+                        <div class="chat__img">
+                            <img src="assets/img/walter.jpg" alt="">
+                        </div>
+                        <div class="chat__content">
+                            <h4 class="chat__name">Walter</h4>
+                            <p class="chat__message">✓ ¡Ahora funciona! Muchas gracias</p>
+                            <p class="chat__time">Ahora</p>
+                            <span class="notification" id="notification">3</span>
+                        </div>
+                    </li>
+                    <li class="chat__item">
+                        <div class="chat__img">
+                            <img src="assets/img/audrey.png" alt="">
+                        </div>
+                        <div class="chat__content">
+                            <h4 class="chat__name">Audrey</h4>
+                            <p class="chat__message">Estará listo mañana en la mañana</p>
+                            <p class="chat__time">09:36</p>
+                        </div>
+                    </li>
+                    <li class="chat__item">
+                        <div class="chat__img">
+                            <img src="assets/img/saul.jpg" alt="">
+                        </div>
+                        <div class="chat__content">
+                            <h4 class="chat__name">Saul</h4>
+                            <div class="chat__message-container">
+                                <p class="chat__message">✓ Mi apellido es Goodman</p>
+                            </div>
+                            <p class="chat__time">09:14</p>
+                        </div>
+                    </li>
+                    <li class="chat__item">
+                        <div class="chat__img">
+                            <img src="assets/img/meredith.png" alt="">
+                        </div>
+                        <div class="chat__content">
+                            <h4 class="chat__name">Meredith</h4>
+                            <p class="chat__message">¿Pudo reiniciarlo? Me avisa</p>
+                            <p class="chat__time">Ayer</p>
+                        </div>
+                    </li>
+                    <li class="chat__item">
+                        <div class="chat__img">
+                            <img src="assets/img/hanamichi.jpg" alt="">
+                        </div>
+                        <div class="chat__content">
+                            <h4 class="chat__name">Hanamichi</h4>
+                            <p class="chat__message">✓ Hola po olvidona &#128515</p>
+                            <p class="chat__time">28/07</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section> 
+<!--seccion dos-->     
+        <section class="section--two">
+            <div class="section--two__content">
+            <div class="talk__bar">
+                <div class="talk__data">
+                    <div class="chat__img">
+                        <img src="assets/img/walter.jpg" alt="">
+                    </div>
+                    <h4 class="talk__name">Walter</h4>
+                    <div class="talk__icons">
+                        <i class="fa-solid fa-video"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+            </div>
+            <section class="talk__space">
+                <div class="talk__conversation">
+                    <div class="talk__message receiver">
+                        <div class="chat__img">
+                            <img src="assets/img/logo2.PNG" alt="">
+                        </div>
+                        <div class="talk__bubble">
+                            <h5 class="talk__content">Por supuesto señor Walter. Cuénteme, ¿desde cuándo no funciona el modem?</h5>
+                            <p class="chat__time">10:30</p>
+                        </div>
+                    </div>
+                    <div class="talk__message sender">
+                        <div class="chat__img">
+                            <img src="assets/img/walter.jpg" alt="">
+                        </div>
+                        <div class="talk__bubble">
+                            <h5 class="talk__content">Desde ayer en la noche. Estoy sin señal desde entonces</h5>
+                            <p class="chat__time">10:35</p>
+                        </div>
+                    </div>
+                    <div class="talk__message receiver">
+                        <div class="chat__img">
+                            <img src="assets/img/logo2.PNG" alt="">
+                        </div>
+                        <div class="talk__bubble">
+                            <h5 class="talk__content">¿Y enciende la luz?</h5>
+                            <p class="chat__time">10:36</p>
+                        </div>
+                    </div>
+                    <div class="talk__message sender">
+                        <div class="chat__img">
+                            <img src="assets/img/walter.jpg" alt="">
+                        </div>
+                        <div class="talk__bubble">
+                            <h5 class="talk__content">Aguarda, iré a revisar</h5>
+                            <p class="chat__time">10:38</p>
+                        </div>
+                    </div>
+                    <div class="talk__message sender">
+                        <div class="chat__img">
+                            <img src="assets/img/walter.jpg" alt="">
+                        </div>
+                        <div class="talk__bubble">
+                            <h5 class="talk__content">Estaba desenchufado jajaja &#128514</h5>
+                            <p class="chat__time">10:50</p>
+                        </div>
+                    </div>
+                    <div class="talk__message sender">
+                        <div class="chat__img">
+                            <img src="assets/img/walter.jpg" alt="">
+                        </div>
+                        <div class="talk__bubble">
+                            <h5 class="talk__content">¡Ahora funciona! Muchas gracias</h5>
+                            <p class="chat__time">10:52</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="talk__write">
+                <div class="talk__items">
+                    <div class="chat__img talk__img">
+                        <img src="assets/img/logo2.PNG" alt="">
+                    </div>
+                    <form class="talk__form">
+                        <input type="text" class="chat__input" placeholder="Escribe un mensaje">
+                    </form>
+                    <button type="button" class="btn talk__button"><i class="fa-solid fa-paper-plane"></i></button>
+                    <div>
+                        <div class="dropup-center dropup talk__dropup">
+                            <button class="btn dropdown-toggle talk__dropup" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-paperclip"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-image"></i></i> Fotos</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-camera"></i>  Cámara</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file"></i>  Documento</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i>  Contacto</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i>  Ubicación</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

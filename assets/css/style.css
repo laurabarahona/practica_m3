@@ -267,6 +267,10 @@ input[type="text"] {
     margin-right: 5px;
 }
 
+.talk__button:hover {
+    background-color: white;
+}
+
 .talk__dropup{
     background-color: white;
     border-radius: 5px;
@@ -281,7 +285,6 @@ input[type="text"] {
     margin: 20px;
     border-radius: 10px;
 }
-
 
 
 .notification {
